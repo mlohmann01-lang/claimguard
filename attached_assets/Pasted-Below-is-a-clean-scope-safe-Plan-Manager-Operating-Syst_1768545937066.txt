@@ -1,0 +1,1588 @@
+Below is a clean, scope-safe “Plan Manager Operating System (PM-OS)” view, explicitly powered by Autoclaim, with no scope creep into provider ops, therapy delivery, or participant case management.
+
+I’ve translated the post we discussed into hard compliance guardrails, and I’ve added a formal Regulatory Invariants section that becomes non-negotiable system law.
+
+This is written so it can drop directly into your Build Doc as a new major section.
+
+Plan Manager Operating System (PM-OS)
+
+Powered by Autoclaim
+(Scope-Locked, Compliance-First, Intelligence-Driven)
+
+1. What the PM-OS Is (and Is Not)
+1.1 What It Is
+
+A single operational control surface for plan managers to:
+
+Process claims
+
+Enforce NDIS compliance
+
+Reduce rejected claims
+
+Prove fiduciary diligence
+
+Continuously improve outcomes
+
+PM-OS = Claims + Compliance + Governance + Learning
+Nothing else.
+
+1.2 What It Is Not (Hard Exclusions)
+
+To prevent scope creep, PM-OS explicitly does NOT include:
+
+Participant goal management
+
+Therapy notes or clinical data
+
+Provider rostering or scheduling
+
+Case management
+
+Care coordination
+
+Financial advice
+
+Plan design or optimisation advice
+
+These exclusions are enforced at:
+
+UI level
+
+API level
+
+AI capability level
+
+2. PM-OS Core Operating View (Single Screen Mental Model)
+
+The PM-OS UI is structured around four immutable operational pillars:
+
+PLAN FUNDS → CLAIM FLOW → COMPLIANCE STATUS → OUTCOMES
+
+
+Every screen, feature, and AI output must map to one of these pillars.
+
+3. PM-OS Core Modules (Scope-Locked)
+3.1 Plan Intelligence (Read-Only)
+
+Plan value
+
+Categories & budgets
+
+Spend velocity
+
+Remaining funds
+
+Risk indicators (overspend / misuse patterns)
+
+🚫 No recommendations on how funds should be used.
+
+3.2 Claim Operations Hub
+
+Unified claim inbox
+
+Status: Pending / Flagged / Submitted / Paid / Rejected
+
+SLA timers
+
+Confidence score per claim
+
+This is the primary daily workspace.
+
+3.3 Compliance Control Layer
+
+Real-time rule validation
+
+Pricing limit enforcement
+
+Service category alignment
+
+Provider eligibility checks
+
+Time / frequency constraints
+
+All surfaced as explainable checks, not opaque blocks.
+
+3.4 Outcome & Risk Dashboard
+
+Rejection rate trend
+
+Auto-claim success %
+
+$ recovered vs baseline
+
+Compliance risk exposure
+
+Audit readiness score
+
+This is where stickiness lives.
+
+4. Translating the Post into Explicit Autoclaim Guardrails
+
+Below are hard system guardrails derived directly from the post’s principles.
+
+Guardrail 1: Plan Managers Are Not Decision Makers
+
+System Rule:
+Autoclaim must never:
+
+Suggest services
+
+Optimise plans
+
+Recommend spending strategies
+
+Implementation:
+
+AI prompts disallow advisory language
+
+UI copy restricted to compliance language
+
+“This system does not provide advice” embedded in outputs
+
+Guardrail 2: Compliance > Convenience
+
+System Rule:
+If speed and compliance conflict, compliance always wins.
+
+Implementation:
+
+Auto-claim only allowed when confidence ≥ threshold
+
+Below threshold → manual review required
+
+Confidence thresholds are admin-locked
+
+Guardrail 3: Explainability Is Mandatory
+
+System Rule:
+Every acceptance, rejection, or flag must be explainable.
+
+Implementation:
+
+No AI decision without rule trace
+
+“Why this decision was made” panel is non-optional
+
+Audit-grade reasoning stored immutably
+
+Guardrail 4: Separation of Roles
+
+System Rule:
+Plan managers manage funds, not care.
+
+Implementation:
+
+No clinical fields in schemas
+
+No provider notes ingestion
+
+No therapy language in LLM vocabulary
+
+Guardrail 5: No Silent Automation
+
+System Rule:
+Autoclaim never acts invisibly.
+
+Implementation:
+
+Every auto-submission logged
+
+Users can see what was automated and why
+
+Automation level visible at all times
+
+5. Regulatory Invariants (System Law)
+
+These are non-overrideable rules.
+They apply across all versions, all tenants, all future markets.
+
+5.1 Invariant 1: Deterministic Compliance Comes First
+
+AI may assist, but rules decide.
+
+LLMs cannot approve or reject claims
+
+AI outputs must reference deterministic checks
+
+Learning can influence suggestions, never rules
+
+5.2 Invariant 2: Auditability Is Non-Optional
+
+Every action must be:
+
+Timestamped
+
+Attributed
+
+Replayable
+
+Explainable
+
+No exceptions, including internal admin actions.
+
+5.3 Invariant 3: No Cross-Tenant Intelligence Leakage
+
+Tenant data is isolated
+
+Global learning is anonymised + aggregated
+
+Opt-in required for shared intelligence
+
+5.4 Invariant 4: Human Override Is Always Available
+
+Users can override system decisions
+
+Overrides are logged and analysed
+
+System learns that an override happened, not why unless provided
+
+5.5 Invariant 5: The System Cannot Give Advice
+
+This is critical legally.
+
+Autoclaim:
+
+Explains rules
+
+Explains outcomes
+
+Explains risk
+
+It never advises.
+
+6. PM-OS Learning Loop (Within Safe Bounds)
+6.1 What the System Learns
+
+Which claims get rejected
+
+Which flags are overridden
+
+Which providers cause issues
+
+Which rules generate friction
+
+6.2 What the System Improves
+
+Confidence scoring accuracy
+
+Flag precision
+
+Auto-claim eligibility
+
+Risk forecasting
+
+6.3 What the System Does NOT Learn
+
+How to “get around” rules
+
+How to maximise spend
+
+How to reinterpret regulation
+
+7. PM-OS Stickiness Without Scope Creep
+
+Stickiness comes from outcomes, not features:
+
+“You avoided $47,200 in rejected claims”
+
+“Your compliance risk dropped 18%”
+
+“Auto-claim accuracy improved for 6 straight weeks”
+
+“Audit readiness: STRONG”
+
+If Autoclaim is removed, performance regresses.
+That’s the moat.
+
+8. PM-OS as a Platform (Future-Safe)
+8.1 Extension Model
+
+Future modules must:
+
+Plug into the Compliance Control Layer
+
+Obey Regulatory Invariants
+
+Be capability-gated by role
+
+8.2 Geography Expansion
+
+Rules engine is jurisdiction-aware
+
+PM-OS frame remains constant
+
+Only rule packs change
+
+9. Final Lock Statement (Important)
+
+Autoclaim is not building a care platform.
+It is building the operating system for compliant fund administration.
+
+Everything that threatens that clarity is out of scope by design.
+
+Next High-Leverage Options
+
+If you want, I can next:
+
+Convert this into exact UI sections + copy
+
+Produce a PM-OS system diagram
+
+Generate Replit tickets mapped to these guardrails
+
+Draft regulator-safe marketing language aligned with invariants
+
+Just tell me where to go next.
+
+From our other thread: Map these regulatory changes to Autoclaim’s validation engine
+
+Draft a “regulatory pressure → automation ROI” narrative
+
+Add this as a market tailwind section in your investor memo
+
+Below is a drop-in, investor-ready Market Tailwinds section that does three things clearly and credibly:
+
+Maps current regulatory pressure → Autoclaim’s validation engine
+
+Translates regulation into automation ROI (not fear-mongering)
+
+Frames Autoclaim as inevitable infrastructure, not optional software
+
+This is written in investor memo language, not product documentation, and can be pasted directly into your deck or memo.
+
+Market Tailwinds: Regulation Is Forcing Automation
+
+Why Plan Management Is Becoming an Operating System Problem
+
+1. Regulatory Reality (What Changed)
+
+Across NDIS and adjacent social-care schemes, regulators are applying three structural pressures simultaneously:
+
+Tighter compliance enforcement
+
+Higher audit frequency and depth
+
+Clearer accountability on plan managers
+
+The effect is not “more paperwork.”
+It is lower tolerance for human error at scale.
+
+Plan managers are now expected to:
+
+Prove compliance ex-ante, not just after the fact
+
+Detect misuse patterns early
+
+Maintain audit-ready records continuously
+
+Demonstrate fiduciary diligence, not just processing volume
+
+This creates a non-linear cost curve for manual operations.
+
+2. Mapping Regulatory Pressure → Autoclaim’s Validation Engine
+
+Below is a direct translation of regulatory change into product necessity.
+
+Pressure 1: Increased Audit Scrutiny
+
+Regulatory Shift
+
+Audits are more frequent
+
+Evidence expectations are higher
+
+“We followed process” is no longer sufficient
+
+Operational Impact (Without Autoclaim)
+
+Manual evidence collation
+
+Retrospective justification
+
+Staff diverted to audit prep
+
+High stress, high error risk
+
+Autoclaim Response
+
+Immutable decision logs per claim
+
+Rule-traceable validation outcomes
+
+One-click audit packs
+
+Replayable decision history
+
+Validation Engine Mapping
+
+Deterministic rule execution
+
+Mandatory explainability layer
+
+Audit-grade metadata storage
+
+ROI Translation
+
+↓ Audit prep cost
+
+↓ Regulatory exposure
+
+↑ Enterprise readiness for scale
+
+Pressure 2: Zero Tolerance for Incorrect Claims
+
+Regulatory Shift
+
+Pricing misalignment and category misuse now trigger penalties
+
+“Good faith mistakes” are no longer defensible
+
+Operational Impact (Without Autoclaim)
+
+Claims rejected after submission
+
+Funds clawed back
+
+Reputational damage
+
+Loss of trust with participants and providers
+
+Autoclaim Response
+
+Pre-submission validation
+
+Pricing caps enforced automatically
+
+Category alignment checked deterministically
+
+Validation Engine Mapping
+
+Rule-based pricing validation
+
+Service category enforcement
+
+Provider eligibility checks
+
+ROI Translation
+
+↓ Rejected claims
+
+↓ Rework cycles
+
+↑ Net realised revenue per plan
+
+Pressure 3: Accountability Shift to Plan Managers
+
+Regulatory Shift
+
+Plan managers are now explicitly accountable for compliance failures
+
+“Provider submitted it” is no longer a shield
+
+Operational Impact (Without Autoclaim)
+
+Increased personal and corporate liability
+
+Conservative processing slows operations
+
+Rising insurance and risk costs
+
+Autoclaim Response
+
+Compliance guardrails enforced at system level
+
+Clear separation between advice and administration
+
+Evidence of due diligence embedded in workflow
+
+Validation Engine Mapping
+
+Role separation enforcement
+
+Advisory language suppression
+
+Human override logging
+
+ROI Translation
+
+↓ Risk premium
+
+↓ Insurance and legal exposure
+
+↑ Confidence to scale operations
+
+3. Regulatory Pressure → Automation ROI Narrative
+The Core Insight
+
+Regulation does not increase costs linearly.
+It increases variance risk.
+
+Manual systems fail not because staff are incompetent, but because:
+
+Volume increases
+
+Rules change
+
+Edge cases compound
+
+Humans cannot be deterministic at scale
+
+Autoclaim converts regulatory pressure into operating leverage.
+
+ROI Flywheel
+Regulatory Pressure
+        ↓
+Manual Cost Explosion
+        ↓
+Automation Becomes Mandatory
+        ↓
+Autoclaim Reduces Variance
+        ↓
+Higher Compliance Confidence
+        ↓
+Faster Processing + Fewer Rejections
+        ↓
+Better Unit Economics
+
+Quantifiable ROI Vectors (What Investors Care About)
+
+Cost Reduction
+
+Fewer rejected claims
+
+Less rework
+
+Lower audit overhead
+
+Revenue Protection
+
+Higher realised claim value
+
+Fewer clawbacks
+
+Faster payments
+
+Risk Compression
+
+Lower compliance exposure
+
+Reduced operational fragility
+
+Stronger regulator posture
+
+Scale Enablement
+
+Headcount does not scale linearly with volume
+
+New clients added without compliance degradation
+
+4. Why This Is a Market Tailwind, Not a Headwind
+
+Historically, regulation kills startups.
+In this market, regulation kills manual incumbents.
+
+Autoclaim benefits because:
+
+Compliance is embedded, not bolted on
+
+Deterministic validation scales better than human review
+
+Learning loops reduce friction over time
+
+Switching away re-introduces risk
+
+This creates:
+
+High switching costs
+
+Structural retention
+
+Category defensibility
+
+5. Strategic Investor Framing (Use This Line)
+
+“Autoclaim is not betting against regulation.
+It is monetising the inevitability of it.”
+
+6. Why This Expands Beyond NDIS
+
+The same pattern exists in:
+
+Disability funding (UK, EU)
+
+Aged care
+
+Insurance claims
+
+Healthcare reimbursements
+
+Government benefit administration
+
+Only the rule packs change.
+The validation engine remains the same.
+
+7. Bottom Line for Investors
+
+Regulation is increasing, not easing
+
+Manual compliance does not scale
+
+Plan managers cannot opt out of this pressure
+
+Autoclaim is infrastructure, not a feature
+
+This is a forced upgrade cycle.
+
+If You Want Next
+
+I can:
+
+Convert this into 3–4 investor slides
+
+Add benchmark metrics (rejection rates, audit costs)
+
+Draft a 1-minute spoken investor narrative
+
+Map this explicitly to ARR expansion logic
+
+Just say the next step.
+
+ok take everything we have discussed here and in the build doc - we need to add security, login (admin and end user), multi tennant, AI language and define all the logic, decisions, capabilities and turn it into one big final replit document that I can handover so that Replit can build the platform beginning to end - exactly as we have described and envisioned.
+
+Below is the single, end-to-end Replit Build Document for Autoclaim as we’ve envisioned it: Plan Manager Operating System (PM-OS) + Autoclaim Validation Engine + Regulatory Invariants + Security / Login / Multi-Tenancy + AI Language + Capabilities + Guardrails.
+
+This is designed to be handed directly to Replit to build beginning to end without scope creep.
+
+AUT OCLAIM — REPLIT MASTER BUILD DOC
+Plan Manager Operating System (PM-OS) powered by Autoclaim
+
+Version: v1.0 Build Spec (Scope-Locked)
+Primary Market: Australia (NDIS first)
+Product Identity: “Compliance-Governed, Learning Revenue System disguised as a claims platform.”
+Non-Negotiable: Deterministic compliance first. AI assists, never decides.
+
+0) Scope Lock (No Scope Creep)
+In Scope (v1)
+
+Plan Manager Operating System view (PM-OS)
+
+Claim intake, normalisation, validation, submission readiness workflow
+
+Deterministic compliance engine (rules + explainability)
+
+Confidence scoring + decision routing (auto / review / reject)
+
+Audit logs + one-click audit packs
+
+Tenant-isolated multi-tenant SaaS
+
+Secure auth, admin console, RBAC
+
+AI assist layer: classification + explanation + summaries (no direct actions)
+
+Integrations: CSV upload + webhook/API intake (minimal), exports (CSV/PDF)
+
+Out of Scope (Explicit Hard Exclusions)
+
+Participant case management
+
+Therapy/clinical notes or clinical decisioning
+
+Rostering/scheduling
+
+Support coordination workflow
+
+“Advice” of any kind (spend optimisation, plan strategy)
+
+Provider operations platform
+
+Payments execution rails (v1: “submission-ready output”, not payment platform)
+
+1) Product Overview
+1.1 PM-OS (Single Screen Mental Model)
+
+Everything maps to:
+
+PLAN FUNDS → CLAIM FLOW → COMPLIANCE STATUS → OUTCOMES
+
+PM-OS must feel like a control surface:
+
+What’s happening now?
+
+What needs attention?
+
+What’s safe to automate?
+
+What risk is emerging?
+
+What outcomes improved?
+
+1.2 Central Engine
+
+Autoclaim Compliance & Validation Engine (ACVE)
+
+Ingest claim inputs
+
+Normalise claim structure
+
+Run deterministic validations
+
+Generate explainable outcomes
+
+Assign confidence + decision state
+
+Produce submission-ready claim output + audit pack
+
+Learn from outcomes and overrides (suggestions only)
+
+2) Architecture (High Level)
+2.1 Services (Single App OK, Modular Boundaries Required)
+
+Web App (Next.js)
+
+API (Node/Express or Next API routes)
+
+DB (Postgres)
+
+Queue/Jobs (optional v1; can be DB-backed job table)
+
+File storage (S3-like) for invoices/evidence
+
+LLM gateway (single service wrapper)
+
+Rules engine module
+
+Audit log module
+
+2.2 Core Data Flow
+
+Intake (upload/API/webhook)
+
+Normalisation → canonical claim schema
+
+Validation (deterministic rules)
+
+Decision state set
+
+Explainability + audit log written
+
+UI shows state + actions
+
+Manual overrides logged
+
+Learning updates suggestions and confidence calibration
+
+3) Multi-Tenancy & Isolation (Non-Negotiable)
+3.1 Tenant Model
+
+Every row in DB includes tenant_id
+
+Enforce isolation at:
+
+API middleware
+
+DB constraints / RLS if available
+
+Service layer “tenant context” required for all queries
+
+3.2 Cross-Tenant Learning
+
+v1 default: OFF
+
+If ever enabled: anonymised + aggregated only, opt-in per tenant.
+
+3.3 Tenant Structure
+
+Tenant = Organisation (Plan Manager business)
+
+Tenant has:
+
+Users
+
+Plans
+
+Providers
+
+Claims
+
+Ruleset versions
+
+Audit logs
+
+Automation settings
+
+4) Authentication, Login, and Roles
+4.1 Login Types
+
+End User Login (Plan Manager staff)
+
+Tenant Admin Login (manages users/settings/rules thresholds)
+
+Platform Super Admin (internal Autoclaim ops)
+
+4.2 Auth Requirements
+
+Email/password + password reset
+
+MFA:
+
+Required for Tenant Admin + Super Admin
+
+Optional for end users (toggle)
+
+Session security:
+
+Short-lived access token + refresh token rotation
+
+Device/session list + revoke
+
+4.3 RBAC (Role + Capability)
+
+Roles (v1):
+
+END_USER
+
+TENANT_ADMIN
+
+SUPER_ADMIN
+Optional (v1.1):
+
+AUDITOR_VIEW
+
+READ_ONLY
+
+Capabilities (enforced):
+
+claims:read, claims:write, claims:approve, claims:submitReady
+
+rules:read, rules:write
+
+users:manage
+
+integrations:manage
+
+audit:read, audit:export
+
+automation:configure
+
+admin:platform
+
+5) Security Baseline (Build Like a Regulated SaaS)
+5.1 Core Security Controls
+
+TLS everywhere
+
+Encrypt sensitive data at rest
+
+Secrets manager (env + vault-like)
+
+Strict tenant isolation middleware
+
+Audit logs immutable (append-only)
+
+Rate limiting (auth + API)
+
+Input validation (Zod)
+
+File upload scanning (basic: MIME + size + optional antivirus hook)
+
+Least privilege RBAC
+
+5.2 Data Protection & Privacy
+
+PII minimisation: store only what is necessary
+
+Field-level encryption for highly sensitive fields (participant identifiers)
+
+Access logs for record views (who viewed what, when)
+
+5.3 Auditability
+
+Every claim action creates an audit event:
+
+actor, role, timestamp, before/after, reason
+
+Every validation run creates:
+
+ruleset version, results, confidence, decision
+
+6) Regulatory Invariants (System Law)
+
+These are non-overrideable across all tenants and versions:
+
+Deterministic compliance comes first
+
+Rules decide. AI cannot approve/reject.
+
+Auditability is mandatory
+
+Every decision must be replayable and attributable.
+
+No cross-tenant leakage
+
+Isolation by default; aggregated learning only with explicit opt-in.
+
+Human override always available
+
+Overrides are logged; system learns only that override occurred + provided reason.
+
+No advice
+
+System explains compliance and risk; never recommends how to spend funds.
+
+7) AI Language, Capability Policy, and Guardrails
+7.1 What AI CAN Do (v1)
+
+Classify service from invoice text into structured fields (assist)
+
+Extract entities (provider name, dates, amounts, line items)
+
+Generate explanations/summaries of deterministic rule results
+
+Suggest likely mappings (category/code) with confidence
+
+Draft provider comms templates (optional) without advice
+
+7.2 What AI CANNOT Do (Hard Block)
+
+Approve/reject claims
+
+Submit claims
+
+Create/modify rules
+
+Provide spending advice
+
+Alter persisted data without human confirmation
+
+7.3 AI Output Language Rules (Tone & Legal Safety)
+
+All AI content must:
+
+Use compliance language: “may”, “appears”, “based on rules”
+
+Avoid advisory verbs: “should”, “recommend”, “best”
+
+Include disclaimers on relevant screens:
+
+“This system provides compliance assistance only and does not provide advice.”
+
+7.4 LLM Architecture Constraint
+
+LLM sits outside the decision path.
+
+LLM receives:
+
+structured claim + validation output + user context
+
+LLM returns:
+
+explanation text only
+
+LLM cannot call mutation endpoints.
+
+8) Validation Engine (ACVE) — Logic & Decisioning
+8.1 Canonical Claim Schema (Conceptual)
+
+Claim includes:
+
+Tenant + plan reference
+
+Participant reference (minimal identifiers)
+
+Provider reference
+
+Service line items (each with code/category/qty/unit price)
+
+Dates/time window
+
+Supporting documents
+
+Derived fields (normalised totals)
+
+Validation results
+
+Confidence + decision state
+
+Audit metadata
+
+8.2 Deterministic Rule Categories (v1)
+
+Rules produce PASS | WARN | FAIL plus reason_code and explain.
+
+Pricing constraints
+
+Unit price <= allowed cap for code (as per ruleset)
+
+Total = qty * unit price checks
+
+Category alignment
+
+Service code belongs to allowed category for plan context
+
+Prevent obvious mismatches
+
+Provider validity
+
+Provider ABN present, basic formatting
+
+Provider existence in tenant directory (or create as “unverified”)
+
+Time & duplication
+
+Service date not in future
+
+Duplicate invoice/line item detection:
+
+same provider + invoice number + date + amount within window
+
+Budget constraints (read-only enforcement)
+
+Warn if category spend velocity indicates overrun
+
+No advice; only “risk flag”
+
+Document completeness
+
+Invoice required fields present: invoice number/date/provider/amount/line items
+
+8.3 Confidence Scoring (v1 simple, deterministic+signals)
+
+Define a claim confidence score 0–100:
+
+Start at 100
+
+Subtract:
+
+-40 for any FAIL
+
+-15 per WARN (cap -45)
+
+-10 if provider unverified
+
+-10 if invoice text extraction uncertain
+
+-20 if duplication risk high
+
+Clamp 0–100
+
+8.4 Decision State Machine (v1)
+
+Based on validation and confidence:
+
+AUTO_READY
+Conditions:
+
+No FAIL
+
+Confidence ≥ AUTO_THRESHOLD (default 85, tenant admin can raise but not lower below 80)
+
+Required fields complete
+Result:
+
+Show “Auto-Ready” badge + allow “Generate Submission Pack” (still human click)
+
+REVIEW_REQUIRED
+Conditions:
+
+Any WARN, or confidence between 60–84
+Result:
+
+Show key issues, recommended fields to confirm, require human approval
+
+REJECT_BLOCKED
+Conditions:
+
+Any FAIL, or confidence < 60
+Result:
+
+Block submission, show failures + fix checklist
+
+Invariant: no claim is ever “auto-submitted” in v1. It becomes “submission-ready pack” requiring human action.
+
+8.5 Explainability Output (Required)
+
+For every rule:
+
+rule_id, status, reason_code, human_summary, evidence_fields
+
+For the claim:
+
+“Decision summary”
+
+“What would change this outcome”
+
+9) PM-OS UI/UX — Pages & Components
+9.1 Public (Unauthed)
+
+Landing (optional)
+
+Login
+
+Forgot password
+
+MFA verify
+
+9.2 App Shell (Authed)
+
+Global:
+
+Tenant switcher (if multi-tenant user)
+
+Search
+
+Notifications
+
+User menu (profile/security)
+
+9.3 Core Pages
+A) PM-OS Dashboard (Default home)
+
+Four panels aligned to the mental model:
+
+Plan Funds (Read-only)
+
+total plans, remaining funds, spend velocity flags
+
+Claim Flow
+
+counts by status: Pending / Flagged / Ready / Blocked
+
+Compliance Status
+
+top risk reasons (duplicates, pricing, missing fields)
+
+Outcomes
+
+rejection rate trend, auto-ready rate, time saved estimate
+
+B) Claims Inbox
+
+Table with filters:
+
+Status, provider, plan, risk level, date
+
+Bulk actions:
+
+“Generate packs” (only for AUTO_READY)
+
+“Request info” template (optional)
+
+Each row shows:
+
+Confidence, decision state, top 1–2 reason tags
+
+C) Claim Detail (Core Work Surface)
+
+Sections:
+
+Claim summary header (status, confidence, amounts)
+
+Documents viewer
+
+Normalised line items table
+
+Validation panel (PASS/WARN/FAIL list with expand)
+
+Explainability panel (rule trace)
+
+Action panel:
+
+Fix checklist
+
+Approve for pack / mark reviewed / override (with reason)
+
+Audit trail timeline (read-only)
+
+D) Audit & Evidence Packs
+
+Searchable list of packs
+
+Export:
+
+PDF (later) / JSON / CSV
+
+Shows:
+
+ruleset version, decision, all validations, actor actions
+
+E) Reports
+
+Monthly summary
+
+Provider risk report
+
+Rework report (top reasons)
+
+Audit readiness score
+
+F) Integrations (v1 minimal)
+
+API keys (tenant admin)
+
+Webhook endpoints (optional)
+
+CSV import mapping tool (simple)
+
+G) Admin Console (Tenant Admin)
+
+Users + roles
+
+Thresholds (AUTO_THRESHOLD etc.)
+
+Ruleset version selection (locked to “approved”)
+
+Feature toggles (LLM explanations on/off)
+
+Audit retention settings
+
+H) Super Admin Console
+
+Tenants
+
+Platform health
+
+Global feature flags
+
+Incident log
+
+10) API Endpoints (v1)
+Auth
+
+POST /api/auth/register (invite-only for tenants)
+
+POST /api/auth/login
+
+POST /api/auth/mfa/verify
+
+POST /api/auth/logout
+
+POST /api/auth/refresh
+
+POST /api/auth/password/reset-request
+
+POST /api/auth/password/reset
+
+Tenancy
+
+GET /api/tenant/me
+
+POST /api/tenant/switch
+
+Claims
+
+POST /api/claims/intake (upload metadata + docs)
+
+POST /api/claims/intake/csv
+
+GET /api/claims
+
+GET /api/claims/:id
+
+POST /api/claims/:id/validate (runs ACVE)
+
+POST /api/claims/:id/approve (review action)
+
+POST /api/claims/:id/override (requires reason)
+
+POST /api/claims/:id/generate-pack
+
+GET /api/claims/:id/audit
+
+Rulesets
+
+GET /api/rulesets
+
+GET /api/rulesets/:id
+
+POST /api/rulesets/:id/activate (tenant admin; must be “approved”)
+
+Reports
+
+GET /api/reports/overview
+
+GET /api/reports/rejections
+
+GET /api/reports/provider-risk
+
+GET /api/reports/audit-readiness
+
+Admin
+
+GET /api/admin/users
+
+POST /api/admin/users/invite
+
+PATCH /api/admin/users/:id/role
+
+PATCH /api/admin/settings (thresholds, toggles)
+
+GET /api/admin/audit-log
+
+AI Assist (Read-only outputs)
+
+POST /api/ai/explain-claim (takes structured validation result)
+
+POST /api/ai/extract-invoice (optional; returns structured suggestion)
+
+Rule: AI endpoints cannot write to claims; only return suggestions.
+
+11) Data Model (Tables)
+
+Minimum v1 tables:
+
+Tenancy / Auth
+
+tenants
+
+users
+
+user_tenants (membership + role)
+
+sessions (refresh tokens, device)
+
+mfa_factors
+
+Core Domain
+
+plans (minimal plan metadata)
+
+participants (minimal identifiers; encrypted fields)
+
+providers (directory + verification status)
+
+claims
+
+claim_line_items
+
+claim_documents (file refs)
+
+claim_validations (each run, ruleset version)
+
+validation_results (rule-level results)
+
+Governance
+
+audit_events (append-only)
+
+rulesets (versioned)
+
+rules (within a ruleset)
+
+tenant_settings
+
+feature_flags (tenant + global)
+
+Learning (v1 minimal)
+
+overrides (linked to claim + reason)
+
+calibration_events (optional; confidence tuning inputs)
+
+12) Market Tailwind Section (Embed in Investor Memo + Product Rationale)
+Regulatory pressure → Validation Engine mapping
+
+Autoclaim exists because:
+
+Audit scrutiny ↑ → immutable logs + replayable decisions
+
+Incorrect claims penalties ↑ → pre-submit deterministic enforcement
+
+Accountability shifts to plan managers ↑ → guardrails + explainability
+
+Regulatory pressure → Automation ROI narrative
+
+Manual variance becomes expensive
+
+Automation reduces variance and rework
+
+Compliance confidence enables scale without headcount linearity
+
+Outcomes drive retention (switching away reintroduces risk)
+
+(Keep this in the investor memo; do not clutter v1 UI with it.)
+
+13) Acceptance Tests (Definition of Done)
+Tenant Isolation
+
+User in Tenant A cannot access any Tenant B record (API + UI)
+
+All list queries scoped by tenant_id
+
+Auth
+
+MFA enforced for admin roles
+
+Session revoke works
+
+Password reset works
+
+Claims
+
+Intake creates canonical claim record
+
+Validation run produces deterministic results + confidence score
+
+Decision state set correctly for:
+
+FAIL → REJECT_BLOCKED
+
+WARN → REVIEW_REQUIRED
+
+PASS + high conf → AUTO_READY
+
+Generate pack only available if AUTO_READY or manually approved
+
+Audit
+
+Every action creates audit_event
+
+Audit pack contains:
+
+ruleset version
+
+validation results
+
+decision state
+
+actor actions timeline
+
+AI Guardrails
+
+AI cannot mutate claim state
+
+AI responses use safe language (no “should”, no advice)
+
+AI endpoint input/output logged (for governance)
+
+14) Build Plan (Phased Delivery)
+Phase 1 — Foundations (Must ship first)
+
+Tenancy + RBAC + auth + MFA
+
+App shell + tenant switch
+
+DB schema + tenant isolation middleware
+
+Audit event system
+
+Phase 2 — Claims MVP
+
+Intake (upload + basic parsing metadata)
+
+Claims Inbox + Claim Detail
+
+ACVE validation engine v1 (pricing/category/dup/fields)
+
+Decision state machine
+
+Generate submission pack (JSON/CSV)
+
+Phase 3 — PM-OS Dashboards + Reporting
+
+Dashboard (4 pillars)
+
+Reports endpoints + UI
+
+Audit pack export UI
+
+Phase 4 — AI Assist Layer (Safe Mode)
+
+Invoice extraction suggestions (optional)
+
+Explainability narratives (from deterministic outputs)
+
+Admin toggles per tenant
+
+Phase 5 — Integrations (Minimal)
+
+API key issuance
+
+/claims/intake external use
+
+CSV mapping improvements
+
+15) Engineering Notes (Implementation Rules)
+
+Use Zod for all request/response validation
+
+Strict typing end-to-end
+
+Every mutation endpoint must:
+
+verify role capability
+
+write audit event
+
+enforce tenant context
+
+Ruleset version must be stored with each validation run
+
+“Approved rulesets” only in v1 (no tenant creating rules from scratch unless flagged)
+
+16) Copy & UI Language Rules (Institutional Tone)
+
+Use states:
+
+AUTO-READY (not “auto-submitted”)
+
+REVIEW REQUIRED
+
+BLOCKED
+
+Use phrasing:
+
+“Requires confirmation”
+
+“Pricing cap check failed”
+
+“Potential duplicate detected”
+
+“Evidence incomplete”
+
+Always provide:
+
+“What changed would resolve this”
+
+“Why we flagged this”
+
+17) “Definition of World-Class” (Built Into Product)
+
+World-class in v1 is not feature breadth. It’s:
+
+Trust
+
+Explainability
+
+Audit-readiness
+
+Outcome visibility
+
+Low variance operations
+
+No scope creep
+
+Replit Handover Checklist (What Replit Must Deliver)
+
+Multi-tenant SaaS with RBAC + MFA
+
+PM-OS dashboard (4 pillar panels)
+
+Claims inbox + claim detail + documents
+
+Deterministic validation engine + confidence + decision state
+
+Explainability panel + audit logs
+
+Generate submission pack exports
+
+Admin console (users/settings/ruleset selection/toggles)
+
+AI assist endpoints (read-only) + safe language enforcement
+
+Reporting pages + exports
+
+Acceptance tests passing for tenant isolation + state machine + audit
+
+If you want, I can also generate a Replit ticket pack in the exact format your devs like (epics → tasks → acceptance criteria) and include a route-by-route Zod schema contract for every endpoint so implementation is frictionless.
