@@ -1,0 +1,1 @@
+- [GitHub connector HTML filter](github-connector-html-filter.md) — keep the app entry in Vite’s HTML transform when publishing through the connector.
