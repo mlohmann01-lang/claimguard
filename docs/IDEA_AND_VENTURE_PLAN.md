@@ -1,23 +1,27 @@
 # ClaimGuard / AutoClaim — Idea & Venture Plan
 
-Date: 2026-09-01
-Status: CANONICAL VENTURE PLAN
+Date: 2026-09-02
+Status: CANONICAL VENTURE PLAN — PROMOTED
 
 ## Mission
 
-Build the claims, compliance, remediation and payment-intelligence operating layer for NDIS Plan Managers first, with provider-side revenue assurance and Get Me Paid as a later expansion on the same transaction intelligence substrate.
+Build the NDIS-native transaction integrity, claims automation, remediation and payment-assurance layer for Plan Managers first, with provider-side Get Me Paid as a later expansion on the same transaction intelligence substrate.
 
 ## Original ICP — preserved
 
-The original customer is the **NDIS Plan Manager**.
+The original customer remains the **NDIS Plan Manager**.
 
-ClaimGuard/AutoClaim should not be repositioned as a provider-practice-management product. Plan Managers remain the initial buyer because their operating economics depend on processing large invoice volumes accurately, compliantly and efficiently under a fixed plan-management fee model.
+ClaimGuard must not be repositioned as a provider-practice-management product. Plan Managers remain the initial buyer because their economics depend on processing high invoice volumes accurately and efficiently while carrying increasing integrity, evidence, audit and payment-accountability obligations.
 
 ## Category
 
-Customer-facing category:
+Near-term customer-facing category:
 
 **NDIS Claims & Revenue Assurance for Plan Managers**
+
+Strategic category direction:
+
+**NDIS Transaction Integrity & Payment Assurance**
 
 Internal platform thesis:
 
@@ -25,200 +29,242 @@ Internal platform thesis:
 
 ## Product promise
 
-> Receive the invoice. Know whether it is valid. Fix what can be fixed. Submit the right claim. Track it through payment. Learn from every exception.
+> **Process good claims automatically. Resolve exceptions faster. Prove every decision.**
 
-## Existing product foundation
+Extended promise:
 
-The current repository already includes:
+> Receive the invoice. Know whether it is valid under the rules that applied at the time. Fix what can lawfully be fixed. Submit the right claim. Track it through payment. Reconcile the outcome. Learn from every exception.
 
-- claim lifecycle states;
-- plan/budget entities;
-- provider registration/compliance concepts;
-- validation rules across pricing, category, provider, duplication, completeness and time/frequency;
+## Competitive doctrine
+
+Profenso and Tecala/Transformr validate the market; they do not close it.
+
+ClaimGuard must match the current market baseline:
+
+- multi-channel invoice intake;
+- OCR/document extraction;
+- participant/provider matching;
+- ABN/provider/registration checks;
+- price/support-item/date/quantity/duplicate validation;
+- plan-manager-specific rules;
+- straight-through processing;
+- safe correction where authorised;
+- exception queues;
 - audit trail;
-- AutoClaim eligibility;
-- outcome metrics including rejection rate, recovery, compliance risk and audit readiness;
-- full-stack React/TypeScript/PostgreSQL prototype architecture.
+- existing-system integration;
+- cost/touch/cycle-time analytics.
 
-The opportunity is therefore not to invent the product from zero, but to harden the domain, rules, evidence, integrations and remediation loop into a production-grade operating system.
+But ClaimGuard must not compete on `OCR accuracy + number of checks` alone. The product must deliberately move the buying criteria toward:
 
-## Competitive reality
+1. effective-date rule governance;
+2. historical decision reproducibility;
+3. exception completion rather than exception detection;
+4. payment and reconciliation closure;
+5. provider integrity and behavioural risk;
+6. evidence exportability and audit reconstruction;
+7. governed override and authority;
+8. remediation and outcome learning.
 
-AI invoice processing is no longer whitespace. Current market entrants already offer OCR/extraction, dozens of invoice checks, existing-plan-management-platform integration and approval-ready processing.
+## Canonical strategic wedges
 
-Therefore ClaimGuard must NOT position around:
+### W1 — Claims Automation
 
-- OCR;
-- `AI invoice processing`;
-- generic 50+ checks;
-- invoice-to-approval automation alone.
+Land by solving today's obvious problem:
 
-Those are expected capabilities.
+`invoice → extraction → validation → PASS | WARN | BLOCK → straight-through or review`
 
-## Differentiation doctrine
+This is required functionality and remains commercially sellable even though competitors exist.
 
-ClaimGuard should compound value in areas that remain strategically stronger:
+### W2 — Temporal Rule Graph
 
-1. **Versioned effective-date rules** — every decision can be reproduced against the rule set that was actually in force.
-2. **Claim decision lineage** — invoice/evidence → canonical claim → rule evaluations → decision → submission → outcome.
-3. **Governance and fiduciary proof** — why a claim was allowed, warned, blocked, overridden or remediated.
-4. **Remediation intelligence** — not only identify an invalid/rejected claim, but determine what can lawfully be corrected and how.
-5. **Outcome learning** — learn which claim patterns, providers, support items and remediation paths lead to successful outcomes.
-6. **Cross-workflow revenue assurance** — validation, claim construction, rejection handling, remittance and provider payment state in one model.
-7. **Two-sided future intelligence** — the same canonical transaction can later power provider-side `Get Me Paid` without rewriting the Plan Manager product.
+Every material rule must carry source, version, effective-from/effective-to dates, scope, precedence/supersession and test evidence.
 
-## Canonical product components
+The platform must answer:
 
-### 1. ClaimGuard — Validate
+> **Was this transaction valid under the exact rule set that applied on the service/decision date?**
 
-`Invoice received → canonical claim → evidence/rule evaluation → PASS | WARN | BLOCK`
+This enables historical replay, transition-rule handling and regulatory defensibility.
 
-Rule domains should include at minimum:
+### W3 — Claim Decision Twin
 
-- invoice completeness;
-- participant/plan relationship;
-- provider identity/ABN/registration state;
-- support item/category;
-- price/rate/quantity;
-- plan/category/funding-period availability;
-- service date and plan dates;
-- duplication;
-- frequency/time constraints;
-- registration-dependent claiming restrictions;
-- evidence requirements;
-- plan-manager-specific controls and policies.
+For every material claim decision, preserve the decision-time state:
 
-### 2. AutoClaim — Construct & Submit
+`transaction facts + evidence + participant/plan state + provider state + rule versions + evaluations + actor/authority + override + decision`
 
-For claims eligible to proceed:
+This is not current truth; it is reproducible **decision-time truth**.
 
-- construct submission payload;
-- preserve claim/submission version;
-- submit through authorised integration/export path;
-- monitor claim outcome;
-- attach remittance/advice/payment evidence;
-- maintain idempotency and replay safety.
+### W4 — Remediation Engine
 
-### 3. Remediation Engine — Fix Exceptions
+ClaimGuard must not stop at identifying an exception.
 
-For WARN/BLOCK/rejected claims:
+`exception → diagnosis → lawful remediation path → evidence/correction request → revalidation → resubmission → final outcome`
 
-- classify cause;
-- determine remediability;
-- distinguish provider correction, participant confirmation, plan-manager action and non-remediable rejection;
-- request missing/corrected evidence;
-- reconstruct claim where allowed;
-- resubmit;
-- measure time and eventual outcome.
+The product should learn which remediation paths work under which conditions.
 
-The product should learn `failure pattern → remediation path → outcome`.
+### W5 — Payment & Reconciliation Assurance
 
-### 4. Payment & Reconciliation — Close the Loop
+Approval is not completion.
 
 Track:
 
-`submitted → accepted/rejected/review → remittance → NDIA payment → provider/reimbursement payment → reconciled/exception`
+`submission → NDIA outcome → remittance → funds received → provider/reimbursement payment → reconciliation`
 
-Key outcome metrics:
+Surface unreconciled value, delayed value, payment exceptions and beneficiary changes.
 
-- first-pass acceptance rate;
-- rejection rate;
-- manual-touch rate;
-- remediation success rate;
-- average remediation time;
-- claim-to-payment cycle time;
-- unreconciled value;
-- recovered claim value;
-- claims prevented from invalid submission.
+### W6 — Provider Integrity Layer
 
-### 5. ProviderOps / Get Me Paid — future expansion
+Move beyond individual invoice validity into longitudinal provider behaviour.
 
-Provider-side expansion uses the same canonical transaction model but reverses the customer objective:
+Potential signals include:
 
-> **Turn delivered services into clean, compliant, collected revenue.**
+- identity/registration/enrolment state over time;
+- support-category history;
+- exception/rejection rates;
+- repeated evidence defects;
+- unusual claim velocity/spend acceleration;
+- bank-beneficiary changes;
+- participant dispute/confirmation signals;
+- suspicious relationships and repeated transaction patterns.
 
-Potential future provider-side components:
+No automated fraud accusation should arise from a single opaque score. Integrity signals must be explainable, evidence-linked and reviewable.
 
-- DeliveredSupport readiness;
-- pre-invoice revenue assurance;
-- evidence completeness;
-- invoice construction;
-- routing by participant management method;
-- invoice/claim tracking;
-- plan-manager/provider follow-up;
-- rejection diagnosis;
-- remediation/resubmission;
-- payment reconciliation;
-- Revenue at Risk / Revenue Protected / Revenue Recovered.
+### W7 — Integrity Graph / Network Intelligence
 
-This is a later product surface. It must not displace Plan Managers as the initial customer.
+Longer-term, model lawful relationships among participants, providers, claims, service events, workers, payment beneficiaries and organisations to identify risks not visible within one invoice.
 
-## Canonical transaction lifecycle
+This is a future moat, not an excuse to centralise unnecessary sensitive data. Privacy, lawful purpose, tenant separation and evidence minimisation remain constraints.
 
-`RECEIVED → EXTRACTED → CANONICALISED → VALIDATING → PASS | WARN | BLOCK → APPROVED → SUBMITTED → PROCESSING → PAID | REJECTED | REVIEW → REMEDIATING → RESUBMITTED → PAID | CLOSED_EXCEPTION`
+### W8 — Proof-of-Service / Participant Protection
 
-Provider payment/reimbursement state should be modelled separately from NDIA claim-payment state.
+Where risk warrants it, support risk-triggered evidence escalation rather than blanket participant friction.
 
-## Evidence and authority doctrine
+Possible evidence may include provider-system evidence, booking/roster records, service documentation and participant confirmation where appropriate.
 
-- An LLM may extract or explain; it must not be the source of claim legality or effective approval authority.
-- Rule decisions must be deterministic/versioned where possible.
-- Every override requires actor, reason, time, prior state and new state.
-- Every claim outcome must remain reproducible as-of the decision time.
-- Missing or ambiguous critical evidence fails closed or escalates.
-- No claim should be described as compliant merely because it passed a probabilistic extraction step.
+### W9 — Integrity Receipt
 
-## Moat
+Create a machine-readable evidence bundle for each completed transaction showing, where applicable:
 
-The long-term moat is not OCR. It is the accumulated corpus of:
+- participant/plan authority;
+- provider suitability;
+- support eligibility;
+- price/quantity validation;
+- evidence status;
+- beneficiary state;
+- rule-set version;
+- decision and override lineage;
+- submission/payment/reconciliation state.
 
-`transaction facts → rule context → decision → exception → remediation → claim outcome → payment outcome`
+The Integrity Receipt should be exportable for audit, dispute and assurance workflows.
 
-This enables:
+### W10 — Get Me Paid
 
-- provider/support-item risk patterns;
-- exception prediction;
-- remediation ranking;
-- policy/rule impact analysis;
-- plan-manager operational benchmarking;
-- first-pass acceptance optimisation;
-- eventual provider-side revenue assurance.
+Provider-side expansion remains later and uses the same transaction substrate from the opposite objective:
+
+> **Turn delivered NDIS services into clean, compliant, collected revenue.**
+
+## Fraud and integrity doctrine
+
+ClaimGuard should address NDIS fraud and non-compliance without becoming a crude `fraud score` product.
+
+Use three separate concepts:
+
+1. **Transaction compliance** — does the transaction satisfy applicable rules and evidence requirements?
+2. **Transaction plausibility** — does the claimed service event make sense given time, place, quantity and available evidence?
+3. **Network integrity** — do relationships and repeated patterns across actors indicate unusual or concerning behaviour?
+
+Start in **Shadow Mode** for integrity features:
+
+`OBSERVE → WARN → ESCALATE → CONSTRAIN → PREVENT`
+
+Do not autonomously block high-impact transactions solely from probabilistic anomaly detection without explicit policy and review authority.
 
 ## Commercial wedge
 
-Initial pitch:
+Initial sales motion:
 
-> **ClaimGuard reduces the cost and risk of processing NDIS invoices by validating every claim against a reproducible rule and evidence trail, automatically progressing clean claims, and working exceptions through to resolution.**
+### ClaimGuard Claims Integrity Baseline
 
-Do not lead with AI. Lead with:
+Run 60–90 days of historical transactions in shadow mode and return:
 
-- lower processing cost;
-- higher first-pass acceptance;
-- fewer invalid claims;
-- faster exception resolution;
-- stronger audit/fiduciary evidence;
-- fewer manual touches per invoice.
+- candidate straight-through-processing rate;
+- human touch rate;
+- exception taxonomy;
+- repeat-defect providers;
+- rule/evidence gaps;
+- cost of rework;
+- payment-delay/unreconciled exposure;
+- historical decision-reconstruction gaps;
+- integrity observations;
+- integration roadmap;
+- ROI model.
+
+This lets ClaimGuard prove value before displacing an incumbent workflow.
+
+## Sales positioning
+
+### Challenger reframe
+
+> **Invoice automation is becoming table stakes. The next operating-cost and risk problem is the exception-to-payment lifecycle.**
+
+### Core economic message
+
+> **Your Plan Management fee is fixed. Your claims workload and integrity burden aren't.**
+
+### No-rip-and-replace message
+
+> **ClaimGuard sits above your existing Plan Management stack.**
+
+### Human-work message
+
+> **Let clean claims flow. Put people only where judgment is needed.**
+
+### Differentiation question
+
+> **If 70% of claims flow straight through, what does your operating model do with the 30% that cannot?**
 
 ## Product metric hierarchy
 
 Primary:
 
-- cost per invoice processed;
-- manual touches per invoice;
-- first-pass claim acceptance;
+- cost per resolved transaction;
+- manual touches per transaction;
+- straight-through-processing rate;
+- first-pass acceptance rate;
 - exception resolution rate/time;
-- value successfully processed and reconciled.
+- claim-to-payment cycle time;
+- unreconciled value;
+- recovered/remediated value;
+- historical decision reconstruction time.
 
 Secondary:
 
 - invoices/claims processed;
-- auto-claim eligibility;
 - warnings/blocks;
 - provider-specific exception patterns;
-- audit readiness.
+- override frequency;
+- evidence completeness;
+- repeat-defect rate;
+- integrity observations requiring review.
+
+## Long-term moat
+
+The moat is the accumulated corpus of:
+
+`service/transaction facts → rule context → evidence → decision → exception → remediation → submission → payment → reconciliation → outcome`
+
+This can compound into:
+
+- Temporal Rule Graph;
+- Claim Decision Twin corpus;
+- Remediation Graph;
+- provider integrity history;
+- transaction-pattern intelligence;
+- plan-manager benchmarks;
+- eventual privacy-preserving cross-customer integrity signals;
+- provider-side revenue assurance.
 
 ## Strategic expansion path
 
-`Plan Manager ClaimGuard → AutoClaim → Remediation → Payment/Reconciliation → Provider-side Get Me Paid → broader NDIS Revenue Assurance`
+`Claims Automation → Temporal Rule Graph → Decision Twin → Remediation → Payment/Reconciliation → Provider Integrity → Integrity Network → Get Me Paid`
 
-Maintain one canonical transaction/evidence/rule architecture across both sides wherever legally and commercially appropriate.
+Maintain one canonical transaction/evidence/rule architecture across these surfaces wherever legally and commercially appropriate.
